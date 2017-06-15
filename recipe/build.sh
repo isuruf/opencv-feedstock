@@ -58,6 +58,8 @@ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$PREFIX/lib/pkgconfig
 export CFLAGS="$CFLAGS -I$PREFIX/include"
 export CXXFLAGS="$CXXFLAGS -I$PREFIX/include"
 
+export CONDA_FORGE_DEBUG=on
+
 cmake .. -LAH                                                             \
     $OPENMP                                                               \
     -DOpenBLAS=1                                                          \
